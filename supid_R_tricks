@@ -1,0 +1,40 @@
+# Supid R Tricks
+
+install.packages("foo", dependencies=TRUE)
+install.packages("foo", version="1.2.3", dependencies=TRUE)
+
+setRepositories()
+> setRepositories()
+Repositories
+
+1: + CRAN
+2:   BioC software
+3:   BioC annotation
+4:   BioC experiment
+5:   BioC extra
+6:   CRAN (extras)
+7:   Omegahat
+8:   R-Forge
+9:   rforge.net
+
+Enter one or more numbers separated by spaces, or an empty line to cancel
+1: 1 6 8 9
+> setRepositories()
+Repositories
+
+1: + CRAN
+2:   BioC software
+3:   BioC annotation
+4:   BioC experiment
+5:   BioC extra
+6: + CRAN (extras)
+7:   Omegahat
+8: + R-Forge
+9: + rforge.net
+
+Enter one or more numbers separated by spaces, or an empty line to cancel
+1:
+
+From shell:
+$ R CMD INSTALL foo.tar.gz
+
