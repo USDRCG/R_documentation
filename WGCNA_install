@@ -1,0 +1,12 @@
+###source R-3.1.2
+> source("http://bioconductor.org/biocLite.R")
+> biocLite("GO.db")
+###this will go through the GO.db installation, will be prompted for updates, choose no (below)
+The downloaded source packages are in
+	'/tmp/Rtmpl6Mh8g/downloaded_packages'
+Old packages: 'ade4', 'lattice', 'RWekajars', 'stringi', 'viridis',
+  'GenomicFeatures', 'Rmpi', 'rtracklayer', 'RWeka'
+Update all/some/none? [a/s/n]: n
+###install WGCNA
+> install.packages("WGCNA")
+###WGCNA should install
